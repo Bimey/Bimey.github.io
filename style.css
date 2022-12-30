@@ -1,0 +1,39 @@
+#title {
+  text-align: center;
+  width: 100%;
+  font-size: 500%;
+}
+
+a {
+  border: 2px solid black;
+  padding: 14px 25px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  animation-name: changer;
+  animation: changer 7s infinite;
+}
+@keyframes changer {
+  0% {background-color: RoyalBlue}
+  25% {background-color: DogerBlue}
+  50% {background-color: DeepSkyBlue}
+  75% {background-color: DogerBlue}
+  100% {background-color: RoyalBlue}
+
+}
+
+a:hover {
+  animation-name: hoverChanger;
+  animation: hoverChanger 7s infinite;
+}
+@keyframes hoverChanger {
+  0% {background-color: red}
+  25% {background-color: orange}
+  50% {background-color: yellow}
+  75% {background-color: orange}
+  100% {background-color: red}
+}
+
+a:active {
+  background-color: black;
+}
