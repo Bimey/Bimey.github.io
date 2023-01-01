@@ -1,12 +1,43 @@
-#title {
-  text-align: center;
-  width: 100%;
-  font-size: 500%;
+#container {
+  display: grid;
+  grid-template-rows: 14% 66% 20%;
+  height: 100vh;
+/*   grid-gap: 0; */
+  margin: 0;
 }
 
-a {
+#title {
+  text-align: center;
+}
+
+#word {
+  font-size: 220%;
+}
+
+#topline,
+#bottomline {
+  height: 2px;
+  background-color: black; 
+}
+
+main {
+  overflow-x: scroll;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  max-height: 100vh;
+  background-color: rgba(200, 200, 200);
+}
+
+#a1 {
   border: 2px solid black;
-  padding: 14px 25px;
+  padding: 15px 10%;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -14,26 +45,56 @@ a {
   animation: changer 7s infinite;
 }
 @keyframes changer {
-  0% {background-color: RoyalBlue}
-  25% {background-color: DogerBlue}
-  50% {background-color: DeepSkyBlue}
-  75% {background-color: DogerBlue}
-  100% {background-color: RoyalBlue}
-
+  0% {
+    background-color: RoyalBlue;
+  }
+  25% {
+    background-color: DogerBlue;
+  }
+  50% {
+    background-color: DeepSkyBlue;
+  }
+  75% {
+    background-color: DogerBlue;
+  }
+  100% {
+    background-color: RoyalBlue;
+  }
 }
 
-a:hover {
+#a1:hover {
   animation-name: hoverChanger;
   animation: hoverChanger 7s infinite;
 }
 @keyframes hoverChanger {
-  0% {background-color: red}
-  25% {background-color: orange}
-  50% {background-color: yellow}
-  75% {background-color: orange}
-  100% {background-color: red}
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: orange;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+  }
 }
 
-a:active {
+#a1:active {
   background-color: black;
+}
+
+#github,
+#codepen {
+  color: purple;
+  text-decoration: none;
+}
+
+#github:active,
+#codepen:active {
+  border: 1px solid black;
 }
