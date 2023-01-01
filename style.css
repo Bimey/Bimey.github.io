@@ -30,6 +30,7 @@ footer {
 }
 
 body {
+  padding: 10px;
   margin: 0;
   max-height: 100vh;
   background-color: rgba(200, 200, 200);
