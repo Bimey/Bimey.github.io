@@ -1,101 +1,67 @@
 #container {
-  display: grid;
-  grid-template-rows: 14% 66% 20%;
-  height: 100vh;
-/*   grid-gap: 0; */
-  margin: 0;
-}
-
-#title {
-  text-align: center;
-}
-
-#word {
-  font-size: 220%;
-}
-
-#topline,
-#bottomline {
-  height: 2px;
-  background-color: black; 
-}
-
-main {
-  overflow-x: scroll;
-  margin: 0;
-}
-
-footer {
-  text-align: center;
-}
-
-body {
-  padding: 10px;
-  margin: 0;
-  max-height: 100vh;
-  background-color: rgba(200, 200, 200);
-}
-
-#a1 {
-  border: 2px solid black;
-  padding: 15px 10%;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  animation-name: changer;
-  animation: changer 7s infinite;
-}
-@keyframes changer {
-  0% {
-    background-color: RoyalBlue;
+    display: grid;
+    grid-template-rows: 15% 78% 12;
+    height: 100vh;
+  /*   grid-gap: 0; */
+    margin: 0;
+    padding: 0 1%;
+    overflow-x: hidden;
   }
-  25% {
-    background-color: DogerBlue;
+  
+  body {
+  /*   overflow-x: hidden; */
+    margin: 0;
+    max-height: 100vh;
+    background-color: #111111
   }
-  50% {
-    background-color: DeepSkyBlue;
+  
+  .txt {
+    color: white
   }
-  75% {
-    background-color: DogerBlue;
+  
+  #bottomline {
+    height: 2px;
+    background-color: #000000; 
   }
-  100% {
-    background-color: RoyalBlue;
+  
+  #title {
+    text-align: center
   }
-}
-
-#a1:hover {
-  animation-name: hoverChanger;
-  animation: hoverChanger 7s infinite;
-}
-@keyframes hoverChanger {
-  0% {
-    background-color: red;
+  
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-evenly;
+  /*   background-color: grey; */
+    margin: 0;
   }
-  25% {
-    background-color: orange;
+  
+  .nav-items {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #e6b800;
+    text-decoration: none
   }
-  50% {
-    background-color: yellow;
+  
+  .nav-items:active {
+    border: 1px solid white;
+    outline: 1px solid white;
+    color: blue
   }
-  75% {
-    background-color: orange;
+  
+  main {
+    overflow-x: scroll;
+    margin: 0;
   }
-  100% {
-    background-color: red;
+  
+  footer {
+    text-align: center;
   }
-}
-
-#a1:active {
-  background-color: black;
-}
-
-#github,
-#codepen {
-  color: purple;
-  text-decoration: none;
-}
-
-#github:active,
-#codepen:active {
-  border: 1px solid black;
-}
+  
+  #word {
+    font-size: 200%;
+  }
+  
