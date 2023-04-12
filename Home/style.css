@@ -24,8 +24,9 @@
     background-color: #000000; 
   }
   
-  #title {
-    text-align: center
+  .title {
+    text-align: center;
+    color: white
   }
   
   nav {
@@ -65,3 +66,6 @@
     font-size: 200%;
   }
   
+  #wordy {
+    color: white;
+  }
