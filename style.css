@@ -64,8 +64,9 @@
   
   .word {
     font-size: 200%;
+    color: white;
   }
   
-  #wordy {
+  .wordy {
     color: white;
   }
